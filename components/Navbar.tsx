@@ -12,9 +12,9 @@ export function Navbar() {
                     <Heading>Marketplace</Heading>
                 </Link>
                 <Flex direction={"row"}>
-                    <Link as={NextLink} href='/buy' mx={2.5}>
+                    {/* <Link as={NextLink} href='/buy' mx={2.5}>
                         <Text>Buy</Text>
-                    </Link>
+                    </Link> */}
                     <Link as={NextLink} href='/sell' mx={2.5}>
                         <Text>Sell</Text>
                     </Link>

@@ -179,9 +179,9 @@ export default function NFTGrid({
                         key={nft.metadata.id}
                         passHref
                     >
-                        {/* <div onClick={overrideOnclickBehavior ? () => overrideOnclickBehavior(nft) : undefined}>
+                        <div onClick={overrideOnclickBehavior ? () => overrideOnclickBehavior(nft) : undefined}>
                             <NFT nft={nft} />
-                        </div> */}
+                        </div>
                     </Link>
                 ))
             ) : (

@@ -8,9 +8,9 @@ const Home: NextPage = () => {
       <Flex h={"80vh"} alignItems={"center"} justifyContent={"center"}>
         <Stack spacing={4} align={"center"}>
           <Heading>Marketplace</Heading>
-          <Button
+          {/* <Button
              as={NextLink} href='/buy'
-          >Shop NFTs</Button>
+          >Shop NFTs</Button> */}
         </Stack>
       </Flex>
     </Container>
