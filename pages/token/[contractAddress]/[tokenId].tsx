@@ -264,6 +264,9 @@ type Props = {
 };
 
 export default function TokenPage({ nft, contractMetadata }: Props) {
+    const greenButton = {
+        backgroundColor: 'green',
+    }
     const { contract: marketplace, isLoading: loadingMarketplace } =
         useContract(
             MARKETPLACE_ADDRESS,
@@ -424,7 +427,12 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
                                 contractAddress={MARKETPLACE_ADDRESS}
                                 action={async () => buyListing()}
                                 isDisabled={(!auctionListing || !auctionListing[0]) && (!directListing || !directListing[0])}
-                            >Buy at asking price</Web3Button>
+                                className="greenButton"
+                            >
+                                Buy at asking price
+                            </Web3Button>
+
+
                             <Text textAlign={"center"}>or</Text>
                             <Flex direction={"column"}>
                                 <Input
