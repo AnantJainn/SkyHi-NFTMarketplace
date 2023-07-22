@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 
+/const/addresses.ts
+
 # testing
 /coverage
 
